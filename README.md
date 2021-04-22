@@ -46,6 +46,18 @@ The _--eval_type_ can be __SNLI__ / __SentEval__ / __Both__ :
   * __Both__ : evaluating above ( __SNLI__ and __SentEval__ ).
 
 
-## Inferentce (Natural Language Inference)
+## Inferentce (Natural Language Inference -- sentence entailment)
+For example, a hypothesis: _a woman is making music._ and a premise _a pregnant lady singing on stage while holding a flag behind her._:
+```
+python nli.py --model_dir "./output/Baseline" --hypothesis "a woman is making music." --premise "a pregnant lady singing on stage while holding a flag behind her."
+```
+It will generate the relation class ( _Nature_, _contradiction_ and _entailment_) between hypothesis and premise.
+
+## Extract Sentence Feature
+For example, extracting the representation of _a woman is making music._
+```
+python nli.py --model_dir "./output/Baseline" --sentence "a woman is making music. --feature_dir XXX"
+```
+It will save the sentence feature into _XXX_.
 
 
