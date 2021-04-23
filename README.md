@@ -28,7 +28,7 @@ when run the `train.py` at first time, the GloVe will be downloaded automaticall
 5. In order to evaluate the sentence representation, the [SentEval](https://github.com/facebookresearch/SentEval) was used. please follow the instruction to install and clone it into the folder `SentEval`.
 
 # Usage
-## 
+## Pretrained model
 The pretrained models can be download in [here](https://drive.google.com/drive/folders/1AcdqUqgMFbFGoJYDMmMpyihlngUtuV1b?usp=sharing). Save them into the folder `dataset`.
 
 ## Train
